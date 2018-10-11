@@ -1,0 +1,104 @@
+/* ===== Settings ====== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #4e4e56;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000; }
+  .loader__box {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10050; }
+    .loader__box .box_spinner {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .loader__box .box_spinner .animation {
+        height: 150px;
+        position: absolute;
+        top: -10px;
+        left: -10px; }
+        .loader__box .box_spinner .animation .spinner {
+          animation: rotate 1.4s linear infinite;
+          -webkit-animation: rotate 1.4s linear infinite;
+          -moz-animation: rotate 1.4s linear infinite;
+          width: 174px;
+          height: 174px;
+          position: relative; }
+        .loader__box .box_spinner .animation .spinner-dot {
+          width: 274px;
+          height: 274px;
+          position: relative;
+          top: 0; }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes rotate {
+  to {
+    transform: rotate(360deg); } }
+        .loader__box .box_spinner .animation .path {
+          stroke-dasharray: 170;
+          stroke-dashoffset: 20; }
+      .loader__box .box_spinner .load-isotype {
+        -webkit-animation: change-bg 10s infinite linear alternate;
+        animation: change-bg 10s infinite linear alternate;
+        will-change: fill; }
+
+@keyframes change-bg {
+  0% {
+    fill: #ffc600; }
+  20% {
+    fill: #43b7e8; }
+  40% {
+    fill: #e53124; }
+  60% {
+    fill: #eb6b0a; }
+  80% {
+    fill: #9dc107; }
+  100% {
+    fill: #ffffff; } }
+  .loader__notify {
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .loader__notify h1 {
+      color: white;
+      font-family: "Poppins", sans-serif; }

@@ -1,0 +1,7 @@
+.loader__box
+  .box_spinner
+    = Haml::Engine.new(File.read('src/partials/_loader_isotype.haml')).render
+    .animation
+      = Haml::Engine.new(File.read('src/partials/_loader_svg.haml')).render
+.loader__notify.mt-5.mb-5
+  %h1.text-white.mt-5 ¡Próximamente!

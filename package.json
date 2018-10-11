@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "2.0.0",
+  "description": "Demo Slick 1.8.0 | Multiple Items",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeonardJAvi"
+  },
+  "author": "Leonard J. Ávila S.",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "gulp-ignore": "^2.0.2",
+    "gulp-ruby-haml": "0.0.9"
+  }
+}

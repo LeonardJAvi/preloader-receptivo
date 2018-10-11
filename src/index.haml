@@ -1,0 +1,9 @@
+!!!
+%html{lang: "en"}
+	%head
+		= Haml::Engine.new(File.read('src/partials/_head.haml')).render
+	%body
+		.loader
+			= Haml::Engine.new(File.read('src/partials/_loader.haml')).render
+		= Haml::Engine.new(File.read('src/partials/_scripts.haml')).render
+	  

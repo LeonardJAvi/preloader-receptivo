@@ -1,0 +1,21 @@
+//Breakpoints for Bootstrap v4.1.1 
+$breakpoints: ('xs': "(min-width: 0px) and (max-width: 575px)",
+'sm': "(min-width: 576px) and (max-width: 767px)",
+'md': "(min-width: 768px) and (max-width: 991px)",
+'lg': "(min-width: 992px) and (max-width: 1199px)",
+'xl': "(min-width: 1200px)",
+) !default;
+
+
+//Brand - Corporate colors
+$color-blue:#43b7e8;
+$color-yellow: #ffc600;
+$color-red:#e53124;
+$color-orange:#eb6b0a;
+$color-green: #9dc107;
+$color-gray:#4e4e56;
+$color-white:#ffffff;
+
+//Brand - Font 
+$font-primary: 'Poppins',
+sans-serif;
